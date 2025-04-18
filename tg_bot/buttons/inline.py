@@ -6,9 +6,9 @@ def join_channels():
 
     buttons = [
         [InlineKeyboardButton(
-            text=channel.name,
-            url=f"https://t.me/{channel.link}"
-        )] for channel in channels
+            text=f"{index+1} - kanal",
+            url=f"https://t.me/{channel.link.replace("@", "")}"
+        )] for index, channel in enumerate(channels)
     ]
 
     buttons.append([InlineKeyboardButton(

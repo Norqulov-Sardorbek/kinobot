@@ -16,8 +16,12 @@ def admin_btn():
 def movies():
     keyboard1 = KeyboardButton(text = create)
     keyboard2 = KeyboardButton(text = delete)
-    keyboard3 = KeyboardButton(text = menuga)
-    design = [[keyboard1, keyboard2],[keyboard3]]
+    design = [[keyboard1, keyboard2]]
+    return ReplyKeyboardMarkup(keyboard=design,resize_keyboard=True)
+def chanels_btn():
+    keyboard1 = KeyboardButton(text = create_chan)
+    keyboard2 = KeyboardButton(text = delete_chan)
+    design = [[keyboard1, keyboard2]]
     return ReplyKeyboardMarkup(keyboard=design,resize_keyboard=True)
 
 def menu_back():

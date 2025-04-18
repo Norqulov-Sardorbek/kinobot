@@ -12,8 +12,7 @@ class User(models.Model):
         return self.chat_id
 
 class ChannelsToSubscribe(models.Model):
-    name=models.CharField(max_length=255)
-    link = models.URLField(null=True, blank=True)
+    link = models.CharField(max_length=255)
 
     def __str__(self):
         return self.link

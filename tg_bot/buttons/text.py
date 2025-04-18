@@ -8,6 +8,7 @@ magic_word="⭐️ Sehirli sozni o'zgartirish"
 admin_txt=MagicWord.objects.filter(id=1).first().word
 create="📥 Kino qo'shish"
 delete="✂️ Kinoni o'chirish"
-
+create_chan="📥 Kanal qo'shish"
+delete_chan="✂️ Kanalni o'chirish"
 
 

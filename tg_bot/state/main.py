@@ -9,6 +9,9 @@ class Subscribe(StatesGroup):
     subscribe = State()
 
 class Meassage(StatesGroup):
+    create_chan_ha = State()
+    delete_chan_ha = State()
+    delete_vid_ha = State()
     new_word = State()
     caption = State()
     video = State()
